@@ -63,15 +63,19 @@ $$
 
 where $x$ stacks all states and control variables over the horizon.
 
+**Code found:**
+- [mpc.py](mpc.py): Implements MPC controller
+- [rti.py](rti.py): Initializes RTI-SQP optimization problem for MPC controller
+
 ---
 
 ## System Dynamics
 
 A **kinematic bicycle model** governs the system with states:
-- $p$: progress along the road \([m]\)
-- $d$: lateral deviation from the road centerline \([m]\)
-- $\mu$: heading angle relative to path tangent \([rad]\)
-- $v$: rear axle velocity \([m/s]\)
+- $p$: progress along the road $[m]$
+- $d$: lateral deviation from the road centerline $[m]$
+- $\mu$: heading angle relative to path tangent $[rad]$
+- $v$: rear axle velocity $[m/s]$
 
 Continuous-time dynamics:
 
@@ -92,8 +96,8 @@ $$
 $$
 
 where:
-- $\delta$ = steering angle [rad]
-- $F_{cmd}$ = drive command (normalized [-100, 100]%)
+- $\delta$ = steering angle $[rad]$
+- $F_{cmd}$ = drive command (normalized $[-100, 100]\%$)
 - $\kappa(p)$ = road curvature
 - $l_r$ = distance from rear axle to center of mass
 - $C_m, C_d$ = motor and drag coefficients
@@ -101,18 +105,8 @@ where:
 
 ---
 
-<!-- ## Repository Structure -->
-
-<!-- - `rti-mpc.ipynb` — RTI-MPC simulation and control algorithm
-- `evaluate-mpc-*.ipynb` — Controller evaluation on easy, medium, and hard tracks
-- `mpc.py` — Core MPC class for system setup and QP solving
-- `mpcFigures/` — Simulation figures
-- `report.pdf` — Full project report detailing derivations and evaluations
-- `trajectory_animation.gif` — Animation of the vehicle trajectory -->
-
-
 ## Results
 
-![Trajectory Following](mpcFigures/trajectory.png)
+![Trajectory Following](figures/trajectory.png)
 
-![Time Series Results](mpcFigures/time_series.png)
+![Time Series Results](figures/time_series.png)
