@@ -6,7 +6,7 @@
 
 This project implements a Real-Time Iteration (RTI) Model Predictive Control (MPC) algorithm to control an autonomous vehicle modeled using a kinematic bicycle model. The controller tracks reference trajectories while accounting for dynamic and actuation constraints, enabling stable control across different road difficulties and conditions.
 
-![Trajectory Animation](trajectory_animation.gif)
+![Trajectory Animation](figures/trajectory_animation.gif)
 
 ## Full Report
 Find detailed report [here](report.pdf).
