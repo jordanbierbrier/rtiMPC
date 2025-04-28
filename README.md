@@ -59,17 +59,17 @@ $$
 \text{subject to } l \leq A x \leq u
 $$
 
-where $ x $ stacks all states and control variables over the horizon.
+where $x$ stacks all states and control variables over the horizon.
 
 ---
 
 ## System Dynamics
 
 A **kinematic bicycle model** governs the system with states:
-- $ p $: progress along the road \([m]\)
-- $ d $: lateral deviation from the road centerline \([m]\)
-- $ \mu $: heading angle relative to path tangent \([rad]\)
-- $ v $: rear axle velocity \([m/s]\)
+- $p$: progress along the road \([m]\)
+- $d$: lateral deviation from the road centerline \([m]\)
+- $\mu$: heading angle relative to path tangent \([rad]\)
+- $v$: rear axle velocity \([m/s]\)
 
 Continuous-time dynamics:
 
@@ -90,12 +90,12 @@ $$
 $$
 
 where:
-- $ \delta $ = steering angle [rad]
-- $ F_{cmd} $ = drive command (normalized [-100, 100]%)
-- $ \kappa(p) $ = road curvature
-- $ l_r $ = distance from rear axle to center of mass
-- $ C_m, C_d $ = motor and drag coefficients
-- $ m $ = mass
+- $\delta$ = steering angle [rad]
+- $F_{cmd}$ = drive command (normalized [-100, 100]%)
+- $\kappa(p)$ = road curvature
+- $l_r$ = distance from rear axle to center of mass
+- $C_m, C_d$ = motor and drag coefficients
+- $m$ = mass
 
 ---
 
