@@ -32,10 +32,12 @@ l_a \leq a_k \leq u_a
 $$
 
 where:
-- $ s_k \in \mathbb{R}^4 $ are the states,
-- $ a_k \in \mathbb{R}^2 $ are the control inputs,
-- $ \bar{s}_k, \bar{a}_k $ are the reference states and actions,
-- $ Q $ and $ R $ are positive semi-definite weighting matrices.
+- $s_k \in \mathbb{R}^4$ are the states
+- $a_k \in \mathbb{R}^2$ are the control inputs
+- $\bar{s}_k, \bar{a}_k$ are the reference states and actions
+- $Q$ and $R$ are positive semi-definite weighting matrices
+- $N$ is the time horizon
+- $f_d$ is the system dynamics (described [here](#system-dynamics))
 
 ---
 
