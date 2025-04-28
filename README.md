@@ -101,7 +101,7 @@ where:
 
 ---
 
-## Repository Structure
+<!-- ## Repository Structure -->
 
 <!-- - `rti-mpc.ipynb` — RTI-MPC simulation and control algorithm
 - `evaluate-mpc-*.ipynb` — Controller evaluation on easy, medium, and hard tracks
@@ -109,3 +109,10 @@ where:
 - `mpcFigures/` — Simulation figures
 - `report.pdf` — Full project report detailing derivations and evaluations
 - `trajectory_animation.gif` — Animation of the vehicle trajectory -->
+
+
+## Results
+
+![Trajectory Following](mpcFigures/trajectory.png)
+
+![Time Series Results](mpcFigures/time_series.png)
