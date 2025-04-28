@@ -63,7 +63,7 @@ $$
 
 where $x$ stacks all states and control variables over the horizon.
 
-**Code found:**
+**Code:**
 - [mpc.py](mpc.py): Implements MPC controller
 - [rti.py](rti.py): Initializes RTI-SQP optimization problem for MPC controller
 
